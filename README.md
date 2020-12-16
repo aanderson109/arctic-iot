@@ -1,9 +1,9 @@
-# arctic-iot
+# Arctic IoT
 IoT connectivity at the top of the world.
 
 I haven't completely tested all of this code yet. Much of it is just from what I remember and writing it out, however I expect to actually test it later. I'll be adding to this regularly as time goes on along with some other stuff.
 
-# code descriptions
+# Code Descriptions
 
 ## Already Published ##
 
@@ -30,4 +30,13 @@ For a real arctic application, it will be much better to not use an ESP8266 but 
 Here we will expand off making the RPi an access point and actually send some information to it. Honestly, this plus the access point will probably be one thing together entirely but incase I go down a rabbit hole on either one i'll keep them separate for now.
 
 ## The Future ##
-This section details some features that can be super helpful but will have to come later in the future once we move past the more fundamental elements.
+This section details some features that can be super helpful but will have to come later in the future once we move past the more fundamental elements. Some of these are ambitious but they are also super fun so it is a trade off.
+
+### Web Application ###
+Okay so, this is probably the least ambitious of these. This will essentially be a web application that lives on the server so instead of just looking at data you can actively communicate with the MCUs and sensors doing the data out in the field. Other features include GPS tracking so you'd see a map and see the pinpoint of the sensors, further environmental monitoring, and probably whatever else we can think of.
+
+### Arctic Science "Companions" ###
+This is probably the most ambitious. This would be an old android phone with a mobile app loaded on that would allow for remote monitoring and control through the app. There is a bunch of different features that can be included on this but we will cross that once I can get the groundwork laid out. More to come, very exciting.
+
+### Network Repeating ###
+This will probably be required but essentially we can use network repeaters to increase our broadcast range to get into those further away spots. Nothing too crazy here and it is fairly simple overall basically a mesh network (kind of) of access points. Main thing to figure out is the routing but that isn't super complicated. The main use for a companion app on an old android would be to basically ping the network so you know when you need to drop a repeater so a project can connect.
